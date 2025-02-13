@@ -1,0 +1,13 @@
+- choose a colour pallete (light blue and dark blue-low sat)
+- choose a font
+- set up styles
+- code it
+- launch it
+
+Goals:
+- add new days                G
+- change previous days        G
+- delete previous days
+- show months on graph        
+- day, week, and  month modes
+- store in a db

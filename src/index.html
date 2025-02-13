@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-container">
+        <h1>Chart.js is PEAK</h1>
+        
+        <div id="chart-container">
+            <canvas id="mood-chart"></canvas>
+        </div>
+
+
+        <div class="add-value-container">
+            <h3>Add Value</h3>
+            <div class="date-entry-area">
+                <input type="text" id="date" autocomplete="off" required>
+                <div class="label-line">MM/DD/YY</div>
+            </div>
+            <div class="mood-entry-area">
+                <input type="text" id="mood" autocomplete="off" required>
+                <div class="label-line">MOOD</div>
+            </div>
+            <button id="add-value-btn">Enter Value</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <script  src="app.js"></script>
+</body>
+</html>

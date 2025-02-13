@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(190, 60%, 30%);
+}
+
+#main-container {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#chart-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    height: 40vh;
+    width: 80vw;
+    z-index: 1111;
+}
+
+.add-value-container  {
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    height: 8vh;
+    border: 1px solid black;
+    gap: 1vh;
+    margin: 1vh;
+    align-items: center;
+    padding: 2vh;
+}
+
+.date-entry-area {
+    position: relative;
+    top: 50%;
+    transform: translateY(-75%);
+    width: 8vw;
+    height: 100%;
+    line-height: 5vh;
+}
+
+#date {
+    position: absolute;
+    width: 100%;
+    outline: none;
+    padding: 0 3px;
+    line-height: 5vh;
+    border-radius: 10px;
+    border: 2px solid black;
+    background: transparent;
+    transition: .3s ease;
+    z-index: 1111;
+}
+
+.label-line {
+    position: absolute;
+    padding: 0 3px;
+    margin: 0 2px;
+    transition: .3s ease;
+    background-color: hsl(190, 60%, 30%);
+    color: hsl(190, 60%, 20%);
+}
+
+#date:focus, 
+#date:valid {
+    border: 2px solid hsl(190, 60%, 60%);
+}
+
+#date:focus + .label-line, 
+#date:valid + .label-line {
+    height: 5vh;
+    line-height: 5vh;
+    transform: translate(-2.4vh, -2vh) scale(.5);
+    z-index: 1111;
+    color: hsl(190, 60%, 60%);
+}
+
+.mood-entry-area {
+    position: relative;
+    top: 50%;
+    transform: translateY(-75%);
+    width: 8vw;
+    height: 100%;
+    line-height: 5vh;
+}
+
+#mood {
+    position: absolute;
+    width: 100%;
+    outline: none;
+    padding: 0 3px;
+    line-height: 5vh;
+    border-radius: 10px;
+    border: 2px solid black;
+    background: transparent;
+    transition: .3s ease;
+    z-index: 1111;
+}
+
+#mood:focus, 
+#mood:valid {
+    border: 2px solid hsl(190, 60%, 60%);
+}
+
+#mood:focus + .label-line, 
+#mood:valid + .label-line {
+    height: 5vh;
+    line-height: 5vh;
+    transform: translate(-.525vh, -2vh) scale(.6);
+    z-index: 1111;
+    color: hsl(190, 60%, 60%);
+}
+
+#add-value-btn {
+    position: relative;
+    right: 0vw;
+    margin: 1vw;
+    background-color: hsl(190, 60%, 70%);
+    border: 2px solid black;
+}
+
+#add-value-btn:hover {
+    background-color: hsl(190, 60%, 65%);
+    cursor: pointer;
+} 
