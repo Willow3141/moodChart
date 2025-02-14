@@ -2,39 +2,44 @@
 const ctx = document.querySelector("#mood-chart")
 const enterValue = document.querySelector('#add-value-btn')
 const color = 'black'
+const monthcolour = 'hsla(150, 100%, 50%, .4)'
 
 const monthsData = [
     {
         data: [],
         type: 'bar',
         label: 'Months-23',
-        backgroundColor: 'hsla(150, 100%, 50%, .4)',
-        borderColor:  'hsla(150, 100%, 50%, .4)',
-        barThickness: 'flex'
+        backgroundColor: monthcolour,
+        borderColor: color,
+        barThickness: 'flex',
+        borderWidth: 1
     },
     {
         data: [],
         type: 'bar',
         label: 'Months-24',
-        backgroundColor: 'hsla(150, 100%, 50%, .4)',
-        borderColor:  'hsla(150, 100%, 50%, .4)',
-        barThickness: 'flex'
+        backgroundColor: monthcolour,
+        borderColor: color,
+        barThickness: 'flex',
+        borderWidth: 1
     },
     {
         data: [],
         type: 'bar',
         label: 'Months-25',
-        backgroundColor: 'hsla(150, 100%, 50%, .4)',
-        borderColor:  'hsla(150, 100%, 50%, .4)',
-        barThickness: 'flex'
+        backgroundColor: monthcolour,
+        borderColor: color,
+        barThickness: 'flex',
+        borderWidth: 1
     },
     {
         data: [],
         type: 'bar',
         label: 'Months-26',
-        backgroundColor: 'hsla(150, 100%, 50%, .4)',
-        borderColor:  'hsla(150, 100%, 50%, .4)',
-        barThickness: 'flex'
+        backgroundColor: monthcolour,
+        borderColor: color,
+        barThickness: 'flex',
+        borderWidth: 1
     }
 ]
 
@@ -272,7 +277,7 @@ const moodChart = new Chart(
             }, 
             plugins: {
                 tooltip: {
-                    intersect: false
+                    intersect: true
                 }, 
                 legend: {
                     labels: {
@@ -301,6 +306,11 @@ const twentyFour = datasets[1].data
 const twentyThree = datasets[0].data
 
 const dateList =[]
+
+avgTheMonths(twentySix)
+avgTheMonths(twentyFive)
+avgTheMonths(twentyFour)
+avgTheMonths(twentyThree)
 
 //Avging months
 function avgTheMonths(year) {
