@@ -7,7 +7,7 @@
 body {
     height: 100vh;
     width: 100vw;
-    background-color: hsl(190, 60%, 30%);
+    background-color: hsl(190, 55%, 55%);
 }
 
 #main-container {
@@ -44,7 +44,7 @@ body {
     position: relative;
     top: 50%;
     transform: translateY(-75%);
-    width: 8vw;
+    width: 150px;
     height: 100%;
     line-height: 5vh;
 }
@@ -67,13 +67,13 @@ body {
     padding: 0 3px;
     margin: 0 2px;
     transition: .3s ease;
-    background-color: hsl(190, 60%, 30%);
+    background-color: hsl(190, 55%, 55%);
     color: hsl(190, 60%, 20%);
 }
 
 #date:focus, 
 #date:valid {
-    border: 2px solid hsl(190, 60%, 60%);
+    border: 2px solid hsl(190, 60%, 80%);
 }
 
 #date:focus + .label-line, 
@@ -82,14 +82,14 @@ body {
     line-height: 5vh;
     transform: translate(-2.4vh, -2vh) scale(.5);
     z-index: 1111;
-    color: hsl(190, 60%, 60%);
+    color: hsl(190, 60%, 80%);
 }
 
 .mood-entry-area {
     position: relative;
     top: 50%;
     transform: translateY(-75%);
-    width: 8vw;
+    width: 100px;
     height: 100%;
     line-height: 5vh;
 }
@@ -109,7 +109,7 @@ body {
 
 #mood:focus, 
 #mood:valid {
-    border: 2px solid hsl(190, 60%, 60%);
+    border: 2px solid hsl(190, 60%, 80%);
 }
 
 #mood:focus + .label-line, 
@@ -118,7 +118,7 @@ body {
     line-height: 5vh;
     transform: translate(-.525vh, -2vh) scale(.6);
     z-index: 1111;
-    color: hsl(190, 60%, 60%);
+    color: hsl(190, 60%, 80%);
 }
 
 #add-value-btn {
